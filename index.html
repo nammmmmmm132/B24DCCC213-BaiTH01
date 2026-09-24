@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang giới thiệu bản thân</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">Văn Phương Nam</h1>
+
+    <button id="menu-btn">☰</button>
+
+    <nav id="menu">
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#ky-nang">Kỹ năng</a>
+      <a href="#du-an">Dự án</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+
+    <button id="mode-btn">Tối</button>
+  </header>
+
+  <!-- GIỚI THIỆU -->
+  <section id="gioi-thieu">
+    <h2>Giới thiệu bản thân</h2>
+    <p>
+      Xin chào, mình là Văn Phương Nam sinh năm 2006.
+      mã sinh viên B24DCCC213.
+      sinh viên ngành Công nghệ thông tin tại PTIT.
+      Mình đang học lập trình web và thực hành qua các bài tập nhỏ như trang này.
+    </p>
+  </section>
+
+  <section id="ky-nang">
+    <h2>Kỹ năng</h2>
+    <div class="skill-list">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">Git</div>
+    </div>
+  </section>
+
+  <section id="du-an">
+    <h2>Dự án</h2>
+
+    <input type="text" id="search-box" placeholder="Tìm dự án...">
+
+    <div class="project-list">
+      <div class="project-box">
+        <h3>Trang giới thiệu bản thân</h3>
+        <p>Xây dựng bằng HTML và CSS cơ bản.</p>
+      </div>
+      <div class="project-box">
+        <h3>Ứng dụng Todo List</h3>
+        <p>Quản lý công việc bằng JavaScript.</p>
+      </div>
+      <div class="project-box">
+        <h3>Máy tính đơn giản</h3>
+        <p>Tính toán cơ bản bằng JavaScript.</p>
+      </div>
+    </div>
+  </section>
+  <section id="lien-he">
+    <h2>Liên hệ</h2>
+
+    <form id="contact-form">
+      <label for="name">Họ tên</label>
+      <input type="text" id="name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email">
+
+      <label for="message">Lời nhắn</label>
+      <textarea id="message" maxlength="200"></textarea>
+      <p><span id="count">0</span>/200 ký tự</p>
+
+      <button type="submit">Gửi</button>
+      <p id="success" class="hidden">Đã gửi thành công!</p>
+    </form>
+  </section>
+
+  <footer>
+    <p><span id="year"></span> Văn Phương Nam- Bài tập Lập trình Web PTIT</p>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
